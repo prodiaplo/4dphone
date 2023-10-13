@@ -284,9 +284,9 @@ h6 {
 /* Button */
 
 a {
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  transition: all 200ms ease;
+  -webkit-transition: all 50ms ease;
+  -moz-transition: all 50ms ease;
+  transition: all 50ms ease;
   -webkit-transform: translate3d(0, 0, 0);
   /* Webkit Hardware Acceleration */
   -webkit-backface-visibility: hidden;
@@ -359,7 +359,7 @@ a:active {
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
+    -webkit-transform: translateY(5px);
   }
   100% {
     opacity: 1;
@@ -370,7 +370,7 @@ a:active {
 @-moz-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -moz-transform: translateY(20px);
+    -moz-transform: translateY(5px);
   }
   100% {
     opacity: 1;
@@ -381,7 +381,7 @@ a:active {
 @-o-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -o-transform: translateY(20px);
+    -o-transform: translateY(5px);
   }
   100% {
     opacity: 1;
@@ -392,7 +392,7 @@ a:active {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(5px);
   }
   100% {
     opacity: 1;
@@ -433,7 +433,7 @@ h1 {
     margin-left: -230px;
     height: 440px;
     margin-top: -250px;
-    font-size: 20px;
+    font-size: 5px;
     border: 3px solid #999;
     box-shadow: 6px 6px 0px #333;
   }
@@ -453,15 +453,15 @@ h1 {
 <body>
 <!-- Redirection Counter -->
 <script type="text/javascript">
-  var count = 20; // Timer
-  var redirect = "https://play.google.com/store/apps/details?id=com.vinwap.parallaxpro&hl=en&gl=US"; // Target URL
+  var count = 5; // Timer
+  var redirect = "https://download-new.apkmody.fun/apps/4d-parallax-wallpaper/download/mod"; // Target URL
 
   function countDown() {
     var timer = document.getElementById("timer"); // Timer ID
     if (count > 0) {
       count--;
       timer.innerHTML = "This page will redirect in " + count + " seconds."; // Timer Message
-      setTimeout("countDown()", 2000);
+      setTimeout("countDown()", 500);
     } else {
       window.location.href = redirect;
     }
@@ -477,7 +477,7 @@ h1 {
     </div>
 
     <div class="notice animated fadeInUp">
-      <p style="color:white;" class="lead">You have completed an offer successfully. We will redirect you to the app page in 20 seconds!</p>
+      <p style="color:white;" class="lead">You have completed an offer successfully. We will redirect you to the app page in 5 seconds!</p>
     </div>
 
     <div class="footer animated slow fadeInUp">
